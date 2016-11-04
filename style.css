@@ -1,0 +1,8 @@
+header{
+    border:1px solid black;
+    height:10vh;
+}
+.headerContent{
+    background-color:blue;
+    height:100%;
+}
