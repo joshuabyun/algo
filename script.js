@@ -388,3 +388,23 @@ function checkPalindrome(str){
     }
 }
 
+
+////////////////
+function tribonacci(signature,n){//[0,0,0],n > 3
+    var arr = signature;
+    var newNum;
+    if(n<=3){
+        arr = arr.slice(0,n) ;
+    }else{
+        for(var i = 0; i < n - 3 ; i++){
+            newNum = 0;
+            for(var j = i; j < i+3; j++){
+                //console.log("arr[j] "+arr[j]);
+                newNum += arr[j];
+            }
+            arr.push(newNum);
+        }
+    }
+    //console.log(arr);
+    return arr;
+}

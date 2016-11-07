@@ -1,8 +1,47 @@
 header{
-    border:1px solid black;
     height:10vh;
+}
+section{
+    height:90vh;
+    position:relative;
 }
 .headerContent{
     background-color:blue;
     height:100%;
 }
+#container1{
+    height:100%;
+}
+#container2{
+    height:100%;
+    background-color:lightcyan;
+}
+#instruction{
+    height:50%;
+    background-color:lightgreen;
+}
+#result{
+    height:50%;
+    background-color: lightblue;
+}
+
+@media (max-width: 991px) {
+    #container1{
+        height:50%;
+    }
+    #instruction{
+        height:100%;
+    }
+    #container2{
+        height:50%;
+    }
+    #result2{
+        height:45vh;
+        background-color: lightblue;
+    }
+}
+#actualCode{
+    height:100%;
+    background-color: lightseagreen;
+}
+
